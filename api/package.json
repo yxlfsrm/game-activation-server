@@ -1,0 +1,9 @@
+{
+  "name": "game-activation-server",
+  "version": "1.0.0",
+  "description": "游戏激活验证服务器",
+  "scripts": {
+    "start": "node api/activate.js"
+  },
+  "dependencies": {}
+}
