@@ -9,9 +9,6 @@ module.exports = async (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     // 从URL参数获取激活码
     const { code } = req.query; // GET请求用req.query
-    if (!code || code.length !== 20) {
-        return res.json({ ok: false, error: '需要20位激活码' });
-    }
     // 检查激活码
     const index = validCodes.indexOf(code);
     if (index === -1) {
